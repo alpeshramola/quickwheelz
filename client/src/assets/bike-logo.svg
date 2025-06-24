@@ -1,0 +1,37 @@
+<svg width="400" height="260" viewBox="0 0 400 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Left speed lines -->
+  <g>
+    <rect x="10" y="170" width="60" height="8" rx="4" fill="#FFD600"/>
+    <rect x="10" y="185" width="40" height="8" rx="4" fill="#FFD600"/>
+    <rect x="10" y="200" width="30" height="8" rx="4" fill="#FFD600"/>
+  </g>
+  <!-- Right speed lines -->
+  <g>
+    <rect x="330" y="170" width="60" height="8" rx="4" fill="#FFD600"/>
+    <rect x="350" y="185" width="40" height="8" rx="4" fill="#FFD600"/>
+    <rect x="360" y="200" width="30" height="8" rx="4" fill="#FFD600"/>
+  </g>
+  <!-- Motorcycle body -->
+  <g>
+    <ellipse cx="110" cy="190" rx="55" ry="55" fill="#FFD600" stroke="#111" stroke-width="10"/>
+    <ellipse cx="290" cy="190" rx="55" ry="55" fill="#FFD600" stroke="#111" stroke-width="10"/>
+    <path d="M110 190 Q130 120 200 120 Q270 120 290 190" fill="#FFD600" stroke="#111" stroke-width="10"/>
+    <rect x="170" y="90" width="60" height="40" rx="20" fill="#111"/>
+    <rect x="230" y="110" width="40" height="12" rx="6" fill="#111"/>
+    <rect x="80" y="110" width="40" height="12" rx="6" fill="#111"/>
+    <ellipse cx="200" cy="110" rx="18" ry="10" fill="#FFD600" stroke="#111" stroke-width="4"/>
+    <rect x="250" y="160" width="70" height="16" rx="8" fill="#FFD600" stroke="#111" stroke-width="4"/>
+    <rect x="80" y="160" width="70" height="16" rx="8" fill="#FFD600" stroke="#111" stroke-width="4"/>
+    <!-- Handlebars -->
+    <rect x="220" y="70" width="50" height="8" rx="4" fill="#111" transform="rotate(20 220 70)"/>
+    <rect x="130" y="70" width="50" height="8" rx="4" fill="#111" transform="rotate(-20 130 70)"/>
+  </g>
+  <!-- Text: QUICK WHEELZ with custom W -->
+  <g>
+    <text x="200" y="250" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="38" fill="#111">QUICK </text>
+    <text x="260" y="250" font-family="Arial Black, Arial, sans-serif" font-size="38" fill="#FFD600" font-weight="bold">W</text>
+    <text x="295" y="250" font-family="Arial Black, Arial, sans-serif" font-size="38" fill="#111">HEELZ</text>
+  </g>
+  <!-- Tagline -->
+  <text x="200" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#111">A MOTORCYCLE RENTAL COMPANY</text>
+</svg> 

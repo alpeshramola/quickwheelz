@@ -1,0 +1,446 @@
+:root {
+  --primary-color: #FFD600;
+  --secondary-color: #FFB700;
+  --owner-primary: #000000;
+  --owner-secondary: #333333;
+  --accent-color: #FFD600;
+  --background-color: #FFD600;
+  --text-color: #000000;
+  --error-color: #dc2626;
+  --success-color: #16a34a;
+  --border-color: #e5e7eb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: #fff !important;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Navigation */
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #000 !important;
+  color: #FFD600 !important;
+}
+
+.btn-primary:hover {
+  background-color: #333 !important;
+  color: #FFD600 !important;
+}
+
+.btn-secondary {
+  background-color: #FFD600 !important;
+  color: #000 !important;
+  border: 1px solid #000 !important;
+}
+
+.btn-secondary:hover {
+  background-color: #000 !important;
+  color: #FFD600 !important;
+}
+
+/* Forms */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.375rem;
+  font-size: 1rem;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Cards */
+.card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Hero Section */
+.hero {
+  padding: 4rem 0;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+/* Bike Card */
+.bike-card {
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.bike-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bike-image {
+  width: 100%;
+  aspect-ratio: 16/9;
+  height: 160px;
+  object-fit: cover;
+  object-position: center;
+  background-color: #f8fafc;
+}
+
+.bike-details {
+  padding: 1.5rem;
+}
+
+.bike-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--text-color);
+}
+
+.bike-price {
+  color: #2563eb;  /* Blue color for price */
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.bike-city {
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.bike-specs {
+  background-color: #f8fafc;
+  padding: 1rem;
+  border-radius: 0.375rem;
+  margin-top: 0.75rem;
+  border: 1px solid #e5e7eb;
+}
+
+.bike-specs p {
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+/* Owner-specific styles */
+.owner-dashboard {
+  background-color: var(--owner-primary);
+  color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.owner-dashboard .card {
+  background-color: white;
+  color: var(--text-color);
+}
+
+.owner-dashboard .bike-card {
+  background-color: white;
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+}
+
+.owner-dashboard .bike-title,
+.owner-dashboard .bike-price,
+.owner-dashboard .bike-city,
+.owner-dashboard .bike-specs p {
+  color: var(--text-color);
+}
+
+.owner-dashboard .btn-primary {
+  background-color: #2563eb;  /* Blue color */
+  color: white;
+}
+
+.owner-dashboard .btn-primary:hover {
+  background-color: #1d4ed8;  /* Darker blue */
+}
+
+.owner-dashboard .btn-secondary {
+  background-color: white;
+  color: #2563eb;
+  border: 1px solid #2563eb;
+}
+
+.owner-dashboard .btn-secondary:hover {
+  background-color: #f8fafc;
+}
+
+/* Customer-specific styles */
+.customer-dashboard {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.customer-dashboard .card {
+  background-color: white;
+  color: var(--text-color);
+}
+
+.customer-dashboard .bike-card {
+  background-color: white;
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+}
+
+.customer-dashboard .bike-title,
+.customer-dashboard .bike-price,
+.customer-dashboard .bike-city,
+.customer-dashboard .bike-specs p {
+  color: var(--text-color);
+}
+
+/* Hero Section */
+.hero .btn-secondary {
+  background-color: white;
+  color: var(--primary-color);
+  border: 2px solid white;
+}
+
+.hero .btn-secondary:hover {
+  background-color: transparent;
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* Update button styles based on user role */
+.owner-mode .btn-primary {
+  background-color: var(--owner-primary);
+  color: white;
+}
+
+.owner-mode .btn-secondary {
+  background-color: white;
+  color: var(--owner-primary);
+  border: 1px solid var(--owner-primary);
+}
+
+.customer-mode .btn-primary {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+.customer-mode .btn-secondary {
+  background-color: white;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .grid-cols-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .grid-cols-2 {
+    grid-template-columns: 1fr;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .grid-cols-3 {
+    grid-template-columns: 1fr;
+  }
+  
+  .nav-links {
+    display: none;
+  }
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+/* Navigation tabs */
+.nav-tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.nav-tabs .btn-primary {
+  background-color: #2563eb;
+  color: white;
+}
+
+.nav-tabs .btn-secondary {
+  background-color: white;
+  color: #2563eb;
+  border: 1px solid #2563eb;
+}
+
+/* Add New Bike button */
+.add-bike-btn {
+  background-color: #2563eb !important;
+  color: white !important;
+}
+
+.add-bike-btn:hover {
+  background-color: #1d4ed8 !important;
+}
+
+.container, .card, .navbar, .bike-card, .features-section, .feature-card, .customer-dashboard, .owner-dashboard {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.hero, .hero-section {
+  background-color: #FFD600 !important;
+  color: #000 !important;
+} 
