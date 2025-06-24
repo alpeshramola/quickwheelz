@@ -51,10 +51,10 @@ The project is approximately 50% complete. The backend infrastructure, database 
 ---
 
 ### **Codebase Information**
-*   **Repository Information**: A repository link and branch name have not been provided.
-*   **Important Information**: The codebase has undergone significant recent changes. Key modifications include:
-    *   **Backend**: The `bike` and `booking` models were updated to store richer location and consumer data.
-    *   **Frontend**: The project pivoted from Google Maps API to Leaflet. This involved changing dependencies (`package.json`), updating `index.html` to include Leaflet CSS, and modifying components. `BikeDetails.js` has been heavily edited and is the source of the current instability.
+*   **Repository Link**: [https://github.com/alpeshramola/quickwheelz](https://github.com/alpeshramola/quickwheelz)
+*   **Main Branch**: `main`
+*   **Important Commits**:
+    *   `758c20c` - Initial commit: Set up the entire project structure, added all existing files, and configured the `.gitignore` to exclude `node_modules`.
 
 ---
 
